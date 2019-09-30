@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "$"
-var adminprefix = '$'
+var prefix = "/"
+var adminprefix = '/'
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("$obc")) {
+    if (message.content.startsWith("/obc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -100,7 +100,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`سعر البوت 15 الف اذا بدك تعال خاص ---> Anwar#2279`,"https://discordapp.com/channels/@me/626451542794567715")
+client.user.setGame(`سعر البوت 13 الف اذا بدك تعال خاص ---> Anwar#2279`,"https://discordapp.com/channels/@me/626451542794567715")
 client.user.setStatus("dnd")
 });
 
